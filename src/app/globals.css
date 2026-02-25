@@ -1,26 +1,68 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Waves Signal Display Font */
+@font-face {
+  font-family: 'Waves Signal';
+  src: url('/fonts/WavesSignal-Regular.otf') format('opentype'),
+       url('/fonts/WavesSignal-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@theme {
+  /* Core palette - black, white, indigo */
+  --color-black: #0a0a0a;
+  --color-white: #fafafa;
+  --color-gray: #666666;
+  --color-light-gray: #e5e5e5;
+
+  /* Custom saturated indigo */
+  --color-indigo: #4338ca;
+  --color-indigo-dark: #3730a3;
+
+  /* Fonts */
+  --font-family-display: 'Waves Signal', Georgia, serif;
+  --font-family-sans: var(--font-space-grotesk), system-ui, sans-serif;
+  --font-family-mono: 'SF Mono', ui-monospace, monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-space-grotesk), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: white;
+  color: var(--color-black);
+}
+
+.font-display {
+  font-family: 'Waves Signal', Georgia, serif;
+}
+
+::selection {
+  background-color: var(--color-indigo);
+  color: white;
+}
+
+/* Minimal scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-black);
+}
+
+/* Focus */
+*:focus-visible {
+  outline: 2px solid var(--color-indigo);
+  outline-offset: 2px;
 }
