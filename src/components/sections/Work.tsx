@@ -32,7 +32,7 @@ export function Work() {
           <span className="font-mono text-xs uppercase tracking-widest text-gray-500">
             Selected Work
           </span>
-          <span className="font-mono text-xs text-gray-500">
+          <span className="font-mono text-xs uppercase tracking-widest text-gray-500">
             02 Projects
           </span>
         </div>
@@ -55,7 +55,7 @@ export function Work() {
                 className={`aspect-[4/3] ${project.color} md:col-span-5 md:aspect-auto md:min-h-[400px]`}
               >
                 <div className="flex h-full items-center justify-center p-10">
-                  <span className="text-4xl font-semibold text-white/20 md:text-6xl">
+                  <span className="text-3xl font-medium text-white/20 md:text-4xl lg:text-5xl">
                     {project.title.split(" ")[0]}
                   </span>
                 </div>
@@ -65,15 +65,15 @@ export function Work() {
               <div className="flex flex-col justify-between p-6 md:col-span-7 md:p-10">
                 <div>
                   <div className="mb-6 flex items-baseline justify-between">
-                    <span className="font-mono text-xs text-gray-500">
+                    <span className="font-mono text-xs uppercase tracking-widest text-gray-500">
                       {project.id}
                     </span>
-                    <span className="font-mono text-xs text-gray-500">
+                    <span className="font-mono text-xs uppercase tracking-widest text-gray-500">
                       {project.year}
                     </span>
                   </div>
 
-                  <h3 className="mb-4 text-4xl font-semibold text-black md:text-5xl">
+                  <h3 className="mb-4 text-3xl font-medium leading-[1.3] text-black md:text-4xl lg:text-5xl">
                     {project.title}
                   </h3>
 
@@ -87,7 +87,7 @@ export function Work() {
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="font-mono text-xs uppercase tracking-wider text-gray-500"
+                      className="font-mono text-xs uppercase tracking-widest text-gray-500"
                     >
                       {tag}
                     </span>

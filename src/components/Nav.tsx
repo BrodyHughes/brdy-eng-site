@@ -26,7 +26,7 @@ export function Nav() {
             <li key={link.name}>
               <a
                 href={link.href}
-                className="font-mono text-sm uppercase tracking-widest text-white/70 transition-colors hover:text-white"
+                className="font-mono text-xs uppercase tracking-widest text-white/60 transition-colors hover:text-white"
               >
                 {link.name}
               </a>
@@ -36,7 +36,7 @@ export function Nav() {
 
         {/* Mobile Menu Button */}
         <button
-          className="font-mono text-sm uppercase tracking-widest text-white/70 md:hidden"
+          className="font-mono text-xs uppercase tracking-widest text-white/60 md:hidden"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label="Toggle menu"
         >
@@ -65,7 +65,7 @@ export function Nav() {
                   >
                     <a
                       href={link.href}
-                      className="text-4xl font-semibold text-white"
+                      className="text-3xl font-medium text-white md:text-4xl"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {link.name}

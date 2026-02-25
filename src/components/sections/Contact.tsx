@@ -20,16 +20,16 @@ export function Contact() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="mb-12 max-w-4xl text-4xl font-semibold leading-[1.1] md:text-6xl lg:text-7xl">
+          <h2 className="mb-12 max-w-4xl text-3xl font-medium leading-[1.3] md:text-4xl lg:text-5xl">
             Have a project in mind? Let&apos;s talk.
           </h2>
 
           <div className="flex flex-col gap-8 md:flex-row md:gap-16">
             <a
               href="mailto:hello@brdy.dev"
-              className="group inline-flex items-center gap-3 text-xl transition-opacity hover:opacity-70 md:text-2xl"
+              className="group inline-flex items-center gap-3 text-lg transition-opacity hover:opacity-70"
             >
-              <span className="font-mono text-sm uppercase text-white/60">Email</span>
+              <span className="font-mono text-xs uppercase tracking-widest text-white/60">Email</span>
               <span>hello@brdy.dev</span>
               <span className="transition-transform group-hover:translate-x-1">
                 →
@@ -40,9 +40,9 @@ export function Contact() {
               href="https://github.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center gap-3 text-xl transition-opacity hover:opacity-70 md:text-2xl"
+              className="group inline-flex items-center gap-3 text-lg transition-opacity hover:opacity-70"
             >
-              <span className="font-mono text-sm uppercase text-white/60">GitHub</span>
+              <span className="font-mono text-xs uppercase tracking-widest text-white/60">GitHub</span>
               <span>@brdy</span>
               <span className="transition-transform group-hover:translate-x-1">
                 →
@@ -53,9 +53,9 @@ export function Contact() {
               href="https://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center gap-3 text-xl transition-opacity hover:opacity-70 md:text-2xl"
+              className="group inline-flex items-center gap-3 text-lg transition-opacity hover:opacity-70"
             >
-              <span className="font-mono text-sm uppercase text-white/60">Twitter</span>
+              <span className="font-mono text-xs uppercase tracking-widest text-white/60">Twitter</span>
               <span>@brdy</span>
               <span className="transition-transform group-hover:translate-x-1">
                 →
@@ -67,7 +67,7 @@ export function Contact() {
 
       {/* Bottom note */}
       <div className="border-t border-white/20 px-6 py-6 md:px-10">
-        <p className="font-mono text-xs text-white/60">
+        <p className="font-mono text-xs uppercase tracking-widest text-white/60">
           Based in the US. Working with teams worldwide.
         </p>
       </div>

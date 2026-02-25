@@ -31,20 +31,20 @@ export function Hero() {
       <div className="flex min-h-screen flex-col justify-between px-6 pb-10 pt-32 md:px-10">
         {/* Center - Main headline */}
         <div className="my-auto py-20">
-          <h1 className="max-w-5xl font-semibold">
+          <h1 className="max-w-5xl">
             <div ref={line1Ref} className="overflow-hidden">
-              <span className="block text-[12vw] leading-[0.9] md:text-[8vw]">
+              <span className="block text-3xl font-medium leading-[1.3] md:text-4xl lg:text-[8vw] lg:leading-[0.95]">
                 Software engineer
               </span>
             </div>
             <div ref={line2Ref} className="overflow-hidden">
-              <span className="block text-[12vw] leading-[0.9] md:text-[8vw]">
+              <span className="block text-3xl font-medium leading-[1.3] md:text-4xl lg:text-[8vw] lg:leading-[0.95]">
                 building for mobile
               </span>
             </div>
             <div ref={line3Ref} className="overflow-hidden">
-              <span className="block text-[12vw] leading-[0.9] md:text-[8vw]">
-                <span className="text-[#4338ca]">&</span> web.
+              <span className="block text-3xl font-medium leading-[1.3] md:text-4xl lg:text-[8vw] lg:leading-[0.95]">
+                <span className="text-[#818cf8]">&</span> web.
               </span>
             </div>
           </h1>
@@ -58,7 +58,7 @@ export function Hero() {
           className="flex flex-col justify-between gap-8 md:flex-row md:items-end"
         >
           <div className="max-w-md">
-            <p className="font-mono text-sm leading-relaxed text-gray-400">
+            <p className="text-lg leading-relaxed text-gray-400">
               Currently available for new projects. Based in the US, working
               with teams worldwide. Specializing in React Native, TypeScript,
               and performance.
@@ -67,7 +67,7 @@ export function Hero() {
 
           <a
             href="#work"
-            className="group flex items-center gap-3 font-mono text-sm uppercase tracking-widest text-gray-400 transition-colors hover:text-white"
+            className="group flex items-center gap-3 font-mono text-xs uppercase tracking-widest text-gray-500 transition-colors hover:text-white"
           >
             <span>Scroll</span>
             <motion.span
